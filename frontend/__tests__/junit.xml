@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" time="1.773">
+  <testsuite name="Landing Page Tests" errors="0" failures="0" skipped="0" timestamp="2023-02-17T07:59:27" time="1.042" tests="3">
+    <testcase classname="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" name="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" time="0.037">
+    </testcase>
+    <testcase classname="Landing Page Tests Catches error and returns null, if fetch call fails " name="Landing Page Tests Catches error and returns null, if fetch call fails " time="0.012">
+    </testcase>
+    <testcase classname="Landing Page Tests Adds a new City - London" name="Landing Page Tests Adds a new City - London" time="0.014">
+    </testcase>
+  </testsuite>
+</testsuites>
