@@ -49,8 +49,7 @@ footer {
 .tile {
   position: relative;
   height: 300px;
-  /* width: calc(25% - 20px); */
-  /* padding: 6px; */
+
   border-radius: 8px;
   cursor: pointer;
   -webkit-transition: 0.2s all;
