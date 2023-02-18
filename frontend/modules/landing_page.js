@@ -33,7 +33,7 @@ function addCityToDOM(id, city, description, image) {
   const container = document.getElementById('data')
   container.innerHTML += ` 
   <div class="col-lg-3 col-xs-12 col-md-6 mb-2">
-  <a href=http://localhost:8082/pages/adventures?city=${id} class="card" id=${id}>
+  <a href="/frontend/pages/adventures/?city=${id}" class="card" id=${id}>
     <div class="tile">
       <img src="${image}" class="rounded img-fluid" />
       <div class="tile-text text-center">

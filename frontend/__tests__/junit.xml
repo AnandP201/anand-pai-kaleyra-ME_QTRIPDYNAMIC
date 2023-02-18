@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="3" failures="0" time="1.773">
-  <testsuite name="Landing Page Tests" errors="0" failures="0" skipped="0" timestamp="2023-02-17T07:59:27" time="1.042" tests="3">
-    <testcase classname="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" name="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" time="0.037">
+<testsuites name="jest tests" tests="8" failures="0" time="2.545">
+  <testsuite name="Landing Page Tests" errors="0" failures="0" skipped="0" timestamp="2023-02-18T05:01:15" time="0.831" tests="3">
+    <testcase classname="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" name="Landing Page Tests fetchCities() - Makes a fetch call for /cities API endpoint and returns an array with the cities data" time="0.041">
     </testcase>
-    <testcase classname="Landing Page Tests Catches error and returns null, if fetch call fails " name="Landing Page Tests Catches error and returns null, if fetch call fails " time="0.012">
+    <testcase classname="Landing Page Tests Catches error and returns null, if fetch call fails " name="Landing Page Tests Catches error and returns null, if fetch call fails " time="0.013">
     </testcase>
     <testcase classname="Landing Page Tests Adds a new City - London" name="Landing Page Tests Adds a new City - London" time="0.014">
+    </testcase>
+  </testsuite>
+  <testsuite name="Adventure Page Tests" errors="0" failures="0" skipped="0" timestamp="2023-02-18T05:01:15" time="1.171" tests="5">
+    <testcase classname="Adventure Page Tests getCityFromURL() - Extracts city from query parameter and return it" name="Adventure Page Tests getCityFromURL() - Extracts city from query parameter and return it" time="0.056">
+    </testcase>
+    <testcase classname="Adventure Page Tests fetchAdventures() - Makes a fetch call for /adventures API endpoint and returns an array with the adventures data" name="Adventure Page Tests fetchAdventures() - Makes a fetch call for /adventures API endpoint and returns an array with the adventures data" time="0.024">
+    </testcase>
+    <testcase classname="Adventure Page Tests fetchAdventures() - Catches errors and returns null, if fetch call fails" name="Adventure Page Tests fetchAdventures() - Catches errors and returns null, if fetch call fails" time="0.018">
+    </testcase>
+    <testcase classname="Adventure Page Tests addAdventureToDOM() - Adds a new Adventure with id value set to &lt;a&gt; tag" name="Adventure Page Tests addAdventureToDOM() - Adds a new Adventure with id value set to &lt;a&gt; tag" time="0.021">
+    </testcase>
+    <testcase classname="Adventure Page Tests addAdventureToDOM() - &lt;a&gt; tag links the adventure card correctly to the corresponding Adventure details page" name="Adventure Page Tests addAdventureToDOM() - &lt;a&gt; tag links the adventure card correctly to the corresponding Adventure details page" time="0.018">
     </testcase>
   </testsuite>
 </testsuites>
