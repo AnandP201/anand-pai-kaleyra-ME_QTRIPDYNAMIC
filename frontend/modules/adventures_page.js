@@ -37,7 +37,7 @@ function addAdventureToDOM(adventures) {
 
     container.innerHTML += `
     <div class="  col-lg-3 col-xs-6 col-sm-6 col-md-6 mb-2">
-    <a href="/detail/?adventure=${item.id}" class="activity-card" id=${item.id}>
+    <a href="/frontend/pages/adventures/detail/?adventure=${item.id}" class="activity-card" id=${item.id}>
     <div class="category-banner">${item.category}</div>
       <img src=${item.image} class="activity-card-image"/>
       
