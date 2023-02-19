@@ -70,7 +70,7 @@
                                             <h6 class="m-0">Person(s)</h6>
                                             <p class="m-0" style="font-size: 16px; color: #999">
                                             <div class="d-inline">₹</div>
-                                            <div class="d-inline" id="reservation-person-cost">0</div> per head
+                                            <div class="d-inline" id="reservation-person-cost"></div> per head
                                             </p>
                                         </div>
                                         <div>
@@ -120,12 +120,10 @@
                 showBannerIfAlreadyReserved,
             } from "../../../modules/adventure_details_page.js";
             (async function () {
-
-
                 let adventureId = await getAdventureIdFromURL(window.location.search);
                 let adventureDetails = await fetchAdventureDetails(adventureId);
-                // console.log(adventureDetails)
                 addAdventureDetailsToDOM(adventureDetails);
+                // console.log(adventureDetails)
                 addBootstrapPhotoGallery(adventureDetails.images);
                 conditionalRenderingOfReservationPanel(adventureDetails);
                 captureFormSubmit(adventureDetails);

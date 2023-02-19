@@ -252,6 +252,7 @@ input[type="number"] {
   color: #fff;
   display: flex;
   justify-content: center;
+  border: none;
   align-items: center;
   text-align: center;
   padding: 10px;
