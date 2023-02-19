@@ -40,6 +40,8 @@ function addAdventureDetailsToDOM(adventure) {
   adventureSubElem.innerHTML = adventure.subtitle
   adventureConElem.innerHTML = adventure.content
 
+  addBootstrapPhotoGallery(adventure.images)
+
 }
 
 //Implementation of bootstrap gallery component
@@ -49,6 +51,8 @@ function addBootstrapPhotoGallery(images) {
   // TODO: MODULE_ADVENTURE_DETAILS
   // 1. Add the bootstrap carousel to show the Adventure images
   const photoGallery = document.getElementById('photo-gallery')
+  photoGallery.innerHTML = ""
+
   photoGallery.innerHTML = `
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">

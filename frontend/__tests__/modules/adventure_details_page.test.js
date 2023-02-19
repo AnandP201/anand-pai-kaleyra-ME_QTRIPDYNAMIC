@@ -81,7 +81,7 @@ describe("Adventure Detail Page Tests", function () {
       costPerHead: 1000,
     };
     addAdventureDetailsToDOM(adventure);
-    addBootstrapPhotoGallery(adventure.images)
+
     expect(document.getElementById("adventure-name").innerHTML).toBe(
       adventure.name
     );
