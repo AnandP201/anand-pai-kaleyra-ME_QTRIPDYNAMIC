@@ -6,7 +6,7 @@ async function fetchReservations() {
   // 1. Fetch Reservations by invoking the REST API and return them
   let reservations = []
   try {
-    reservations = await fetch('http://localhost:8082/reservations').then((res) => {
+    reservations = await fetch(`${config.backendEndpoint}/reservations`).then((res) => {
       return res.json()
     })
   } catch (e) {
@@ -58,7 +58,7 @@ function addReservationToTable(reservations) {
         <td>${getDateStr(item.date)}</td>
         <td>${item.price}</td>
         <td>${getDateString(item.time)}</td>
-        <td><button id=${item.id} class="reservation-visit-button"><a href="/frontend/pages/adventures/detail/?adventure=${item.adventure}">Visit Adventure</a></button></td>
+        <td><button id=${item.id} class="reservation-visit-button"><a href="../detail/?adventure=${item.adventure}">Visit Adventure</a></button></td>
       </tr>`
   })
   //Conditionally render the no-reservation-banner and reservation-table-parent

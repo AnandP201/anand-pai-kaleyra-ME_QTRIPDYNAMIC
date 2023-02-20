@@ -15,7 +15,7 @@ async function fetchAdventureDetails(adventureId) {
   // 1. Fetch the details of the adventure by making an API call
   let data = {}
   try {
-    data = await fetch(`http://localhost:8082/adventures/detail/?adventure=${adventureId}`).then((res) => {
+    data = await fetch(`${config.backendEndpoint}/adventures/detail/?adventure=${adventureId}`).then((res) => {
       return res.json()
     })
   } catch (e) {
@@ -140,7 +140,7 @@ function captureFormSubmit(adventure) {
       body: JSON.stringify(body),
     };
 
-    fetch('http://localhost:8082/reservations/new', options)
+    fetch(`${config.backendEndpoint}/reservations/new`, options)
       .then(data => {
         if (!data.ok) {
           data.json().then((res) => {

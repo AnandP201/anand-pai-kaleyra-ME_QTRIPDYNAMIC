@@ -16,7 +16,7 @@ async function fetchAdventures(city) {
   // 1. Fetch adventures using the Backend API and return the data
   let adventures = []
   try {
-    adventures = await fetch(`http://localhost:8082/adventures/?city=${city}`).then((res) => {
+    adventures = await fetch(`${config.backendEndpoint}/adventures/?city=${city}`).then((res) => {
       return res.json()
     })
   } catch (e) {
