@@ -79,7 +79,7 @@ function addReservationToTable(reservations) {
         <td>${getDateString(item.time)}</td>
         <td><button id=${
           item.id
-        } class="reservation-visit-button"><a href="/pages/detail/?adventure=${
+        } class="reservation-visit-button"><a href="/pages/adventures/detail/?adventure=${
       item.adventure
     }">Visit Adventure</a></button></td>
       </tr>`;
